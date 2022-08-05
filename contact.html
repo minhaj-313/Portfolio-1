@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact - Shaikh Minhaj - Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="icon" type="image/x-icon" href="images/pic-logo.jpeg">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="sidebar">
+      <!--================Navbar====================-->
+      <nav>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/cross.png"
+              style="height: 20px;"></a>
+          <ul>
+            <li><a href="/">Home</li></a>
+            <li><a href="intro.html">My Intro</li></a>
+            <li><a href="services.html">Services</li></a>
+            <li><a href="images\Shaikh Minhaj - Resume.pdf" target="_blank">Resume</a></li></a>
+            <li><a href="blog.html">Blog</li></a>
+            <li><a href="contact.html">Contact Me</li></a>
+          </ul>
+      </nav>
+    </div>
+    <!--================Main========================-->
+    <div class="main" id="main">
+      <button class="openbtn" onclick="openNav()"><img src="images/menu icon.png" style="height: 20px;"></button>
+      <div class="contactform">
+        <h1>Contact Me For Work/General Enquiries</h1>
+        <!--Form-->
+        <form>
+          <div class="mb-3">
+            <label for="clintName" class="form-label">Enter Name</label>
+            <input type="text" class="form-control" id="clintName">
+          </div>
+          <div class="mb-3">
+            <label for="clintEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="clintEmail" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="clintPhone" class="form-label">Phone Number</label>
+            <input type="phone" class="form-control" id="clintPhone">
+            <div id="emailHelp" class="formtext-">We'll never share your email & Phone with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="clintMessage" class="form-label">Message</label>
+            <textarea type="text-area" class="form-control" id="clintMessage"></textarea>
+          </div>
+          <button type="submit" class="btn btn-sm">Submit</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div>
+
+
+      <img src="images/btn-LB.png" alt="o" height="30px" onclick="myFunction()">
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <footer>
+    <p>Developed by : © Shaikh Minhaj, 2022<br>
+    <!-- <a href="mailto:hege@example.com">Email : shaikhumarms999@gmail.com</a></p> -->
+  </footer>
+</body>
+
+</html>
