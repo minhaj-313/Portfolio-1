@@ -56,10 +56,14 @@ body {
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: transparent;
+    color: #fff;
     padding: 10px 15px;
     border: none;
+    float: left;
+}
+.openbtn .fa-bars::before{
+    font-size: 2rem;
 }
 
 #main {
@@ -68,7 +72,7 @@ body {
 
 .main {
     /* background-color: yellow; */
-    width: 90vw;
+    flex-grow: 1;
     overflow: hidden;
 }
 
@@ -500,7 +504,6 @@ p {
 
 
   .fa {
-    padding: 15px;
     font-size: 15px;
     width: 15px;
     text-align: center;
@@ -511,14 +514,18 @@ p {
   
   .fa:hover {
       opacity: 0.9;
-       background-color: aqua;
+       background-color: transparent;
         animation-name: example;
         animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: alternate;
+        animation-delay: 0.3s;
         
   }
   @keyframes example {
-    from {background-color: blue;}
-    to {background-color: pink;}
+    0% {background-color: #82ccdd;}
+    50% {background-color: royalblue;}
+    100% {background-color: #82ccdd;}
   }
   
   .fa-facebook {
@@ -578,18 +585,25 @@ text-align: center;
 color: #ddd;
 text-transform: uppercase;
 font-size: 30px;
+position: relative;
+display: inline;
+padding: 0px;
 }
 
-
-.border{
-width: 160px;
-height: 2px;
-background:#82ccdd ;
-margin:40px auto ;
+.section-title::after{
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background:#82ccdd;
+    margin: 10px 0px;
 }
 
 
 .services-container{
+    padding: 2rem 0rem;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -598,7 +612,7 @@ justify-content: center;
 
 .service-box{
 max-width: 33.33%;
-padding:10px;
+padding:3rem;
 text-align: center;
 color: #ddd;
 cursor:pointer;
@@ -610,23 +624,35 @@ cursor:pointer;
     height: 70px;
     border: 3px solid #82ccdd;
     color: #82ccdd;
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
     margin-bottom: 30px;
     margin-top: 16px;
     transition: 0.3s linear;
 }
 
 .service-icon i {
-line-height: 70px;
-transform: rotate(-45deg);
-font-size: 26px;
+    width: 80%;
+    height: 80%;
+    line-height: 50px;
+    /* transform: rotate(-45deg); */
+    font-size: 26px;
+    transition: 0.3s linear;
+    display: flex;
+}
+.service-icon i::before{
+    flex-grow: 1;
+    vertical-align: middle;
 }
 
 .service-box:hover .service-icon{
+    transform: rotate(45deg) scale(1.2);
     background: #82ccdd;
     color:#ddd ;
 }
-
+.service-box:hover .service-icon i{
+    transform: rotate(-45deg);
+    color:#000 ;
+}
  .service-title{
     font-size: 18px;
     text-transform: uppercase;
