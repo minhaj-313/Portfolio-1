@@ -15,6 +15,7 @@ body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
+    font-family: sans-serif;
 }
 
 @keyframes gradient {
@@ -86,18 +87,17 @@ body {
   margin-left: 50px;
 }
 
+
 .openbtn {
     font-size: 20px;
-    cursor: pointer;
+    cursor: pointer;  
     background-color: transparent;
     color: #fff;
     padding: 10px 15px;
     border: none;
     float: left;
 }
-.openbtn .fa-bars::before{
-    font-size: 2rem;
-}
+
 
 #main {
   transition: margin-left 0.5s;
@@ -252,7 +252,7 @@ footer{
   border:2px solid whitesmoke ;
 }
 
-.icon-socials .fa{
+.icon-socials .fab{
   color: white;
   font-size: large;
 }
@@ -268,7 +268,6 @@ footer{
 .devPic img:hover{  
   box-shadow: 0 3px 5px blue;
   border:2px solid blue;
-  height: 40vh;
   align-items: center;
 }
 
@@ -649,8 +648,7 @@ p {
 }
 
   
-  .fa {
-    font-size: 5px;
+  .fab {
     width: 60px;
     /* height: auto; */
     text-align: center;
@@ -664,8 +662,7 @@ p {
   
   
 
-
-  .fa:hover {
+  .fab:hover {
       opacity: 0.9;
   }
   @keyframes example {
@@ -826,6 +823,20 @@ cursor:pointer;
 .service-desc {
   font-size: 14px;
 }
+
+
+#mySidebar.show{
+  width: 250px;
+}
+#main.show{
+  margin-left: 250px;
+}
+
+#hamburger{
+  font-size: 1.8rem;
+}
+
+
 
 @media screen and (max-width: 960px) {
   .service-box {

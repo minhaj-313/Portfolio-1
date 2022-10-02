@@ -1,20 +1,15 @@
-function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
+const sideBar = document.getElementById("mySidebar");
+const main = document.getElementById("main");
+const hamburger = document.getElementById("hamburger");
 
-function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
+const toggleNav = () => {
+  sideBar.classList.toggle("show");
+  main.classList.toggle("show");
+  hamburger.classList.toggle("fa-bars");
+  hamburger.classList.toggle("fa-xmark");
+};
 
-function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+function toggleDarkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 }
-
-function hoverE(){
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-
