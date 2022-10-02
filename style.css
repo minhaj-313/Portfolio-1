@@ -65,16 +65,16 @@ body {
 }
 
 .openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  padding: 10px 15px;
-  border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    float: left;
 }
-
-#main button:hover{
-    left:0;
+.openbtn .fa-bars::before{
+    font-size: 2rem;
 }
 
 #main {
@@ -82,9 +82,9 @@ body {
 }
 
 .main {
-  /* background-color: yellow; */
-  width: 90vw;
-  overflow: hidden;
+    /* background-color: yellow; */
+    flex-grow: 1;
+    overflow: hidden;
 }
 
 .container {
@@ -639,43 +639,38 @@ p {
   margin-top: 30px;
 }
 
-.fa {
-  padding: 15px;
-  font-size: 15px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 5px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-  opacity: 0.9;
-  background-color: aqua;
-  animation-name: example;
-  animation-duration: 2s;
-}
-@keyframes example {
-  from {
-    background-color: blue;
+  .fa {
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
   }
-  to {
-    background-color: pink;
+  
+  .fa:hover {
+      opacity: 0.9;
   }
-}
-
-.fa-facebook {
-  background: #0000cc;
-  color: white;
-}
-
-.fa-twitter {
-  background: #1aa3ff;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #3333ff;
-  color: white;
+  @keyframes example {
+    0% {background-color: #82ccdd;}
+    50% {background-color: royalblue;}
+    100% {background-color: #82ccdd;}
+  }
+  
+  .fa-facebook {
+    background: #0000cc;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #1aa3ff;
+    color: white;
+  }
+  
+  
+  .fa-linkedin {
+    background:  #3333ff;
+    color: white;
 }
 
 .fa-instagram {
@@ -689,6 +684,25 @@ footer {
   font-size: small;
 }
 
+.section-title{
+text-align: center;
+color: #ddd;
+text-transform: uppercase;
+font-size: 30px;
+position: relative;
+display: inline;
+padding: 0px;
+}
+
+.section-title::after{
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background:#82ccdd;
+    margin: 10px 0px;
 * {
   margin: 0;
   padding: 0;
@@ -709,7 +723,7 @@ footer {
   margin: auto;
   padding: 0 20px;
   overflow: hidden;
-}
+ }
 
 .section-title {
   text-align: center;
@@ -718,12 +732,11 @@ footer {
   font-size: 30px;
 }
 
-.border {
-  width: 160px;
-  height: 2px;
-  background: #82ccdd;
-  margin: 40px auto;
-}
+.services-container{
+    padding: 2rem 0rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 
 .services-container {
   display: flex;
@@ -731,41 +744,63 @@ footer {
   justify-content: center;
 }
 
-.service-box {
-  max-width: 33.33%;
-  padding: 10px;
-  text-align: center;
-  color: #ddd;
-  cursor: pointer;
+.service-box{
+max-width: 33.33%;
+padding:3rem;
+text-align: center;
+color: #ddd;
+cursor:pointer;
 }
 
-.service-icon {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  border: 3px solid #82ccdd;
-  color: #82ccdd;
-  transform: rotate(45deg);
-  margin-bottom: 30px;
-  margin-top: 16px;
-  transition: 0.3s linear;
+.service-icon{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #82ccdd;
+    color: #82ccdd;
+    /* transform: rotate(45deg); */
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
 }
 
 .service-icon i {
-  line-height: 70px;
-  transform: rotate(-45deg);
-  font-size: 26px;
+    width: 80%;
+    height: 80%;
+    line-height: 50px;
+    /* transform: rotate(-45deg); */
+    font-size: 26px;
+    transition: 0.3s linear;
+    display: flex;
+}
+.service-icon i::before{
+    flex-grow: 1;
+    vertical-align: middle;
 }
 
-.service-box:hover .service-icon {
-  background: #82ccdd;
-  color: #ddd;
+.service-box:hover .service-icon{
+    transform: rotate(45deg) scale(1.2);
+    background: #82ccdd;
+    color:#ddd ;
+    background-color: transparent;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: alternate;
+    animation-delay: 0.3s;
 }
+.service-box:hover .service-icon i{
+    transform: rotate(-45deg);
+    color:#000 ;
+}
+ .service-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+ }
 
-.service-title {
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+.service-desc{
+    font-size: 14px; 
 }
 
 .service-desc {
