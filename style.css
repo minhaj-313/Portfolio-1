@@ -220,10 +220,10 @@ footer{
 }
 
 .icon-socials a{
-    padding-right: 32px;
+    /* padding-right: 32px; */
     background-color: black;
-    border:2px solid blue;
-    border-radius: 50%;
+    border:1px solid blue;
+    border-radius: 100%;
 }
 .icon-socials a:hover{
     
@@ -532,7 +532,7 @@ p {
   .hello {
     font-size: 40px;
   }
-}
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -603,7 +603,7 @@ p {
         padding: 10px 14px;
         border-radius: 18px;
         color: white;
-        background-image:background-image: linear-gradient(to bottom right, rgb(0, 50, 255), rgb(0, 0, 255)) ;
+        background-image: linear-gradient(to bottom right, rgb(0, 50, 255), rgb(0, 0, 255)) ;
         font-size: 15px;
         font-weight: bold;
         margin: 31px 3px;
@@ -639,15 +639,23 @@ p {
   margin-top: 30px;
 }
 
+  
   .fa {
-    font-size: 15px;
-    width: 15px;
+    font-size: 5px;
+    width: 60px;
+    /* height: auto; */
     text-align: center;
+    /* vertical-align: center; */
     text-decoration: none;
-    margin: 5px 5px;
-    border-radius: 50%;
+    /* margin-left: 2px;;
+    margin: 0.25px; */
+    padding: 20px;
+    border-radius: 100%;
   }
   
+  
+
+
   .fa:hover {
       opacity: 0.9;
   }
@@ -658,23 +666,25 @@ p {
   }
   
   .fa-facebook {
-    background: #0000cc;
+    /* background: #0000cc; */
     color: white;
+    /* margin: 5px; */
   }
   
   .fa-twitter {
-    background: #1aa3ff;
+    /* background: #1aa3ff; */
     color: white;
+    
   }
   
   
   .fa-linkedin {
-    background:  #3333ff;
+    /* background:  #3333ff; */
     color: white;
 }
 
 .fa-instagram {
-  background: #ff4dd2;
+  /* background: #ff4dd2; */
   color: white;
 }
 
