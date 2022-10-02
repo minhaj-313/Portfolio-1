@@ -514,13 +514,6 @@ p {
   
   .fa:hover {
       opacity: 0.9;
-       background-color: transparent;
-        animation-name: example;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: alternate;
-        animation-delay: 0.3s;
-        
   }
   @keyframes example {
     0% {background-color: #82ccdd;}
@@ -648,6 +641,12 @@ cursor:pointer;
     transform: rotate(45deg) scale(1.2);
     background: #82ccdd;
     color:#ddd ;
+    background-color: transparent;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: alternate;
+    animation-delay: 0.3s;
 }
 .service-box:hover .service-icon i{
     transform: rotate(-45deg);
