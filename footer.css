@@ -14,6 +14,21 @@ footer img {
     max-height: 100%;
 }
 
+.footer {
+    padding: 8px;
+    font-weight: bold;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.footer span {
+    font-size: 15px;
+}
+
+.footer:hover {
+    transform: scale(1.01);
+}
+
 .footer-container{
     padding: 50px 210px;
     display: grid;
