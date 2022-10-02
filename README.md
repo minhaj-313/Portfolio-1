@@ -1,5 +1,5 @@
 # Portfolio-1
-Hey, I'm Shaikh Minhaj, and this is my portfolio website.
+Hey, this is my portfolio website.
 
 <h2 align='left'> Languages and Tools used:</h2>
 <p align='left'> 
@@ -22,3 +22,7 @@ Hey, I'm Shaikh Minhaj, and this is my portfolio website.
 9. Congrats! Your PR should now be merged in!
 
  >> If you can't handle some parts of the issue, then please ask for help in the comments.
+
+# Author
+<a href='https://github.com/minhaj-313'> <img src='https://avatars.githubusercontent.com/u/107562768?v=4' width="100" height="100"> </a><br>
+<a href='https://github.com/minhaj-313'> Shaikh Minhaj </a>
