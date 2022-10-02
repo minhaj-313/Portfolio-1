@@ -8,8 +8,8 @@
 
 body {
     padding: 25px;
-    background-color: black;
-    color: white;
+    background-color:black ;
+    color: beige;
     font-size: 25px;
 }
 
@@ -62,6 +62,10 @@ body {
     border: none;
 }
 
+#main button:hover{
+    left:0;
+}
+
 #main {
     transition: margin-left .5s;
 }
@@ -80,8 +84,8 @@ body {
 
 .infoContainer {
     /* background-color: rgb(242, 0, 255); */
-    height: 58vh;
-    width: 80vw;
+    height: 45vh;
+    width: 75vw;
     margin: 144px auto;
     display: flex;
     justify-content: space-around;
@@ -97,12 +101,26 @@ body {
 }
 
 .hello {
-    font-size: 55px;
+
+    font-style: italic;
+    font-size: 32px;
+    color: blue;
+    border: white;
+    margin-bottom: 20px;
 }
 
 .name {
-    font-size: 60px;
+    font-size: 65px;
     font-family: 'Fira Sans', sans-serif;
+    box-shadow: 1 2 5px #2409ef;
+
+    font-size: 40px;
+}
+
+.name {
+    font-size: 75px;
+    font-family: 'Fira Sans', sans-serif;   
+
 }
 
 .about {
@@ -110,8 +128,9 @@ body {
 }
 
 .moreabout {
-    font-size: 29px;
+    font-size: 20px;
     font-family: 'Fira Sans', sans-serif;
+    font-style: italic;
     margin-top: 23px;
 }
 
@@ -123,13 +142,18 @@ body {
     padding: 9px 14px;
     border-radius: 18px;
     color: white;
-    background-image: linear-gradient(to bottom right, rgb(0, 255, 255), rgb(17, 0, 255));
+    background-image: linear-gradient(to bottom right, rgb(0, 50, 255), rgb(0, 0, 255));
     font-size: 21px;
     font-weight: bold;
     margin: 0 3px;
     cursor: pointer;
-    border-color: #0000ff;
+    border-color:blue;
 
+}
+
+footer{
+    color: black;
+    background-color:cyan;
 }
 
 .btn-sm {
@@ -148,9 +172,40 @@ body {
     border-color: rgb(0, 55, 255);
 }
 
+.icon-socials a{
+    padding-right: 32px;
+    background-color: black;
+    border:2px solid blue;
+    border-radius: 50%;
+}
+.icon-socials a:hover{
+    
+    box-shadow: 0 0 5px whitesmoke;
+    border:2px solid whitesmoke ;
+}
+
+.icon-socials .fa{
+    color: white;
+    font-size: large;
+}
+
 .devPic img {
+
     height: 45vh;
+    border:2px solid blue;
+    border-radius: 50%;
     align-items: center;
+    margin-top: -25px;
+}
+
+.devPic img:hover{  
+    box-shadow: 0 3px 5px blue;
+    border:2px solid blue;
+
+    height: 40vh;
+    align-items: center;
+
+
 }
 
 .devPic-2 img {
@@ -389,6 +444,8 @@ p {
         margin: 4px 0px;
         cursor: pointer;
     }
+    
+    
 
     .infoContainer {
         /* background-color: rgb(242, 0, 255); */
@@ -403,7 +460,11 @@ p {
     .hello {
         font-size: 40px;
     }
-
+    
+    .about{
+        margin-top: 10px;
+        font-size: 30px;
+    } 
 
 }
 
@@ -460,7 +521,7 @@ p {
         padding: 10px 14px;
         border-radius: 18px;
         color: white;
-        background-image: linear-gradient(to bottom right, rgb(0, 255, 255), rgb(17, 0, 255));
+        background-image:background-image: linear-gradient(to bottom right, rgb(0, 50, 255), rgb(0, 0, 255)) ;
         font-size: 15px;
         font-weight: bold;
         margin: 31px 3px;
