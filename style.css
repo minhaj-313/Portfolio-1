@@ -220,44 +220,34 @@ footer{
 }
 
 .icon-socials a{
-    padding-right: 32px;
-    background-color: black;
-    border:2px solid blue;
-    border-radius: 50%;
+  width: 70px;
+  padding: 10px 0px;
+  background-color: black;
+  border:5px solid blue;
 }
 .icon-socials a:hover{
-    
-    box-shadow: 0 0 5px whitesmoke;
-    border:2px solid whitesmoke ;
+  box-shadow: 0 0 5px whitesmoke;
+  border:2px solid whitesmoke ;
 }
 
 .icon-socials .fa{
-    color: white;
-    font-size: large;
+  color: white;
+  font-size: large;
 }
 
 .devPic img {
-
   height: 45vh;
   align-items: center;
-
-
-    height: 45vh;
-    border:2px solid blue;
-    border-radius: 50%;
-    align-items: center;
-    margin-top: -25px;
+  border:2px solid blue;
+  border-radius: 50%;
+  margin-top: -25px;
 }
 
 .devPic img:hover{  
-    box-shadow: 0 3px 5px blue;
-    border:2px solid blue;
-
-    height: 40vh;
-    align-items: center;
-
-
-
+  box-shadow: 0 3px 5px blue;
+  border:2px solid blue;
+  height: 40vh;
+  align-items: center;
 }
 
 .devPic-2 img {
@@ -416,7 +406,6 @@ p {
     border-radius: 5px;
     margin: 3px 0 0 0;
     padding: 10px;
-
     font-size: 20px;
   }
 
@@ -506,7 +495,6 @@ p {
         margin: 4px 0px;
         cursor: pointer;
     }
-    
     
 
     .infoContainer {
