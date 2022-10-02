@@ -8,8 +8,8 @@
 
 body {
     padding: 25px;
-    background-color: black;
-    color: white;
+    background-color:black ;
+    color: beige;
     font-size: 25px;
 }
 
@@ -97,12 +97,12 @@ body {
 }
 
 .hello {
-    font-size: 55px;
+    font-size: 40px;
 }
 
 .name {
-    font-size: 60px;
-    font-family: 'Fira Sans', sans-serif;
+    font-size: 75px;
+    font-family: 'Fira Sans', sans-serif;   
 }
 
 .about {
@@ -132,6 +132,11 @@ body {
 
 }
 
+footer{
+    color: black;
+    background-color:cyan;
+}
+
 .btn-sm {
     font-size: 14px;
     padding: 10px 19px;
@@ -149,8 +154,9 @@ body {
 }
 
 .devPic img {
-    height: 45vh;
+    height: 40vh;
     align-items: center;
+
 }
 
 .devPic-2 img {
