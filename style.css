@@ -62,6 +62,10 @@ body {
     border: none;
 }
 
+#main button:hover{
+    left:0;
+}
+
 #main {
     transition: margin-left .5s;
 }
