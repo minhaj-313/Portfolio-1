@@ -220,10 +220,10 @@ footer{
 }
 
 .icon-socials a{
-  width: 70px;
-  padding: 10px 0px;
-  background-color: black;
-  border:5px solid blue;
+    /* padding-right: 32px; */
+    background-color: black;
+    border:1px solid blue;
+    border-radius: 100%;
 }
 .icon-socials a:hover{
   box-shadow: 0 0 5px whitesmoke;
@@ -626,15 +626,23 @@ p {
   margin-top: 30px;
 }
 
+  
   .fa {
-    font-size: 15px;
-    width: 15px;
+    font-size: 5px;
+    width: 60px;
+    /* height: auto; */
     text-align: center;
+    /* vertical-align: center; */
     text-decoration: none;
-    margin: 5px 5px;
-    border-radius: 50%;
+    /* margin-left: 2px;;
+    margin: 0.25px; */
+    padding: 20px;
+    border-radius: 100%;
   }
   
+  
+
+
   .fa:hover {
       opacity: 0.9;
   }
@@ -645,23 +653,25 @@ p {
   }
   
   .fa-facebook {
-    background: #0000cc;
+    /* background: #0000cc; */
     color: white;
+    /* margin: 5px; */
   }
   
   .fa-twitter {
-    background: #1aa3ff;
+    /* background: #1aa3ff; */
     color: white;
+    
   }
   
   
   .fa-linkedin {
-    background:  #3333ff;
+    /* background:  #3333ff; */
     color: white;
 }
 
 .fa-instagram {
-  background: #ff4dd2;
+  /* background: #ff4dd2; */
   color: white;
 }
 
