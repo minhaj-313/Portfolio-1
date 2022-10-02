@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="" width=device-width, initial-scale=1.0>
     <title>Shaikh Minhaj - Full Stack Developer</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/pic-logo.jpeg">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./footer.css">
     <!--
     =====================================
     Website Build By : Shaikh Minhaj
@@ -26,8 +26,6 @@
             <!--================Navbar====================-->
             <nav>
                 <div id="mySidebar" class="sidebar">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/cross.png"
-                            style="height: 20px;"></a>
                     <ul>
                         <li><a href="/">Home</li></a>
                         <li><a href="intro.html">My Intro</li></a>
@@ -41,7 +39,9 @@
         </div>
         <!--================Main========================-->
         <div class="main" id="main">
-            <button class="openbtn" onclick="openNav()"><img src="images/menu icon.png" style="height: 20px;" onmouseover="hoverE()"></button>
+            <button class="openbtn" onclick="toggleNav()">
+                <i class="fas fa-bars" id="hamburger"></i>
+            </button>
             <div class="infoContainer">
                 <div class="devInfo">
                     <div class="hello">Hi There,</div>
@@ -50,7 +50,8 @@
 
                     <div class="moreabout">I am a Full Stack Developer, and Also a Web Designer. I Live in Nanded</div>
 
-                    <div class="moreabout">I am a Full Stack Web Developer as well as a Designer, <br> I Live in Nanded</div>
+                    <div class="moreabout">I am a Full Stack Web Developer as well as a Designer, <br> I Live in Nanded
+                    </div>
 
                     <div class="buttons">
                         <a href="images\Shaikh Minhaj - Resume.pdf" target="_blank"> <button class="btn">Download
@@ -58,10 +59,11 @@
                         <a href="contact.html"> <button class="btn">Contact Me</button></a>
 
                         <div class="icon-socials">
-                            <a href="https://www.linkedin.com/in/shaikh-minhaj-softwareengineer/" class="fa fa-linkedin"></a>
-                            <a href="https://www.instagram.com/minhaj_313" class="fa fa-instagram"></a>
-                            <a href="https://www.facebook.com/minhaj.shaikh.5836711" class="fa fa-facebook"></a>
-                            <a href="https://twitter.com/minhaj_313" class="fa fa-twitter"></a>
+                            <a href="https://www.linkedin.com/in/shaikh-minhaj-softwareengineer/"
+                                class="fab fa-linkedin"></a>
+                            <a href="https://www.instagram.com/minhaj_313" class="fab fa-instagram"></a>
+                            <a href="https://www.facebook.com/minhaj.shaikh.5836711" class="fab fa-facebook"></a>
+                            <a href="https://twitter.com/minhaj_313" class="fab fa-twitter"></a>
                         </div>
                     </div>
                 </div>
@@ -73,7 +75,7 @@
 
     </div>
     <div>
-        <img src="images/btn-LB.png" alt="o" height="30px" onclick="myFunction()">
+        <img src="images/btn-LB.png" alt="o" height="30px" onclick="toggleDarkMode()">
     </div>
 
     <!--================Footer====================-->
@@ -96,10 +98,14 @@
                     Social Media Handles
                 </div>
                 <div class="social-media-icons">
-                    <a href="https://www.facebook.com/minhaj.shaikh.5836711" class="social-footer-icon facebook-icon"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/minhaj_313" class="social-footer-icon instagram-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="https://twitter.com/minhaj_313" class="social-footer-icon twitter-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/shaikh-minhaj-softwareengineer/" class="social-footer-icon linkedin-icon"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/minhaj.shaikh.5836711" class="social-footer-icon facebook-icon"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/minhaj_313" class="social-footer-icon instagram-icon"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/minhaj_313" class="social-footer-icon twitter-icon"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/shaikh-minhaj-softwareengineer/"
+                        class="social-footer-icon linkedin-icon"><i class="fab fa-linkedin"></i></a>
 
                 </div>
             </div>
@@ -128,8 +134,8 @@
 
 
     <footer class="footer">
-            <p><span>Author</span>: Shaikh Minhaj</p>
-            <p><span>Email: </span><a href="mailto:Shaikhumarms999@gmail.com">Shaikhumarms999@gmail.com</a></p>
+        <p><span>Author</span>: Shaikh Minhaj</p>
+        <p><span>Email: </span><a href="mailto:Shaikhumarms999@gmail.com">Shaikhumarms999@gmail.com</a></p>
     </footer>
 
 </body>
