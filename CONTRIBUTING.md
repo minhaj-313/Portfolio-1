@@ -2,7 +2,7 @@
 
 > :information_source: Please follow the [code of conduct](CODE_OF_CONDUCT.md) in all the interactions with Searchor and your fork repository.
 This repository welcomes all contributions and corrections. Before contributing, please make sure you have read the guidelines below. <br>
-If you're new to _git_ and/or _GitHub_, we suggest you go through [the GitHub Guides](https://guides.github.com/introduction/flow/).
+If you're new to _git_ and/or _GitHub_, we suggest you go through [the GitHub Guides](https://github.com/minhaj-313/Portfolio-1).
 1. Fork this repository
 2. (Optional) Clone the fork via `git`
    - Using SSH
@@ -14,19 +14,19 @@ If you're new to _git_ and/or _GitHub_, we suggest you go through [the GitHub Gu
    - Using HTTPS
 
      ```shell
-     git clone --filter=tree:0 https://github.com/devict/ictgamejam.git
+     git clone https://github.com/minhaj-313/Portfolio-1.git
      ```
 
    - Using GitHub CLI
 
      ```shell
-     gh repo clone devict/ictgamejam -- --filter=tree:0
+     gh repo clone https://github.com/minhaj-313/Portfolio-1.git 
      ```
 
-3. Create a new branch from the latest branch `gh-pages`
+3. Create a new branch  
 4. Start hacking on the new branch
 5. Commit and push to the new branch
-6. Make a pull request towards the original repository ([devict/ictgamejam](https://github.com/devict/ictgamejam))
+6. Make a pull request towards the original repository ([minhaj-313](https://github.com/minhaj-313/Portfolio-1))
 
 ## Pull Request Guidelines
 
