@@ -54,7 +54,7 @@ footer img {
 
 /* footer2 styling */
 
-.social-footer-icon{
+.social-footer-icon,.github-footer-icon{
     border-radius: 50%;
 display: flex;
 align-items: center;justify-content: center;
@@ -77,7 +77,6 @@ align-items: center;justify-content: center;
     
 }
 
-
 .social-footer-icon:hover{
     filter: brightness(82%);
 }
@@ -93,7 +92,9 @@ align-items: center;justify-content: center;
 .linkedin-icon{
     background-color: #0077b5;
 }
-
+.github-icon {
+    background-color: #6e5494;
+}
 
 /* footer3 styling */
 
