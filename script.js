@@ -14,14 +14,14 @@ function toggleDarkMode() {
   element.classList.toggle("dark-mode");
 }
 
-function openNav() {
-  document.getElementById("sidebar_link").style.opacity = "1"
-  document.getElementById("main").style.marginLeft = "250px"
-  document.getElementById("mySidebar").style.width = "250px"
-}
+// function openNav() {
+//   document.getElementById("sidebar_link").style.opacity = "1"
+//   document.getElementById("main").style.marginLeft = "250px"
+//   document.getElementById("mySidebar").style.width = "250px"
+// }
 
-function closeNav() {
-  document.getElementById("main").style.marginLeft = "0"
-  document.getElementById("mySidebar").style.width = "0"
-  document.getElementById("sidebar_link").style.opacity = "0"
-}
+// function closeNav() {
+//   document.getElementById("main").style.marginLeft = "0"
+//   document.getElementById("mySidebar").style.width = "0"
+//   document.getElementById("sidebar_link").style.opacity = "0"
+// }

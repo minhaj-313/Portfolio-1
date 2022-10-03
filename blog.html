@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" type="image/x-icon" href="images/pic-logo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -18,8 +20,8 @@
             <!--================Navbar====================-->
             <nav>
                 <div id="mySidebar" class="sidebar">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/cross.png"
-                            style="height: 20px;"></a>
+                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/cross.png"
+                            style="height: 20px;"></a> -->
                     <ul id="sidebar_link">
                         <li><a href="/">Home</li></a>
                         <li><a href="intro.html">My Intro</li></a>
@@ -32,8 +34,12 @@
         </div>
         <!--==================Main========================-->
         <div class="main" id="main">
-            <button class="openbtn" class="openbtn" onclick="openNav()"><img src="images/menu icon.png"
-                    style="height: 20px;" onmouseover="hoverE()"></button>
+            <!-- <button class="openbtn" class="openbtn" onclick="toggleNav()"><img src="images/menu icon.png"
+                    style="height: 20px;" onmouseover="hoverE()"></button> -->
+            <!-- <button class="openbtn" onclick="openNav()"><i class="fa fa-bars"></i></button> -->
+            <button class="openbtn" id="navbtn" onclick="toggleNav()">
+                <i class="fas fa-bars" id="hamburger"></i>
+            </button>
             <div class="blogcontainer" id="is_blog_container">
                 <h1>Blogs by Shaikh Minhaj - Full Stack Developer</h1>
                 <div class="blogItem">
@@ -53,7 +59,7 @@
                 </div>
 
                 <div class="blogItem">
-                    
+
                     <h2>Learn JavaScript - in Fun Way</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus deleniti hic, unde at
                         quibusdam natus architecto consectetur voluptas rem, blanditiis id optio aspernatur cumque
@@ -62,7 +68,7 @@
                 </div>
 
                 <div class="blogItem">
-                    
+
                     <h2>Learn JavaScript - in Fun Way</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus deleniti hic, unde at
                         quibusdam natus architecto consectetur voluptas rem, blanditiis id optio aspernatur cumque
