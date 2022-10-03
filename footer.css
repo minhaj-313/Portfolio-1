@@ -102,6 +102,8 @@ align-items: center;justify-content: center;
     align-items: center;
     justify-content: left;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
 }
 
 
@@ -123,7 +125,7 @@ align-items: center;justify-content: center;
 .footer1 p, .footer2 p, .footer4 p{
     font-size: 0.9rem;
     color: #ecebeb;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     word-spacing: 3px;
     line-height: 1.4rem;
 }
@@ -147,12 +149,24 @@ align-items: center;justify-content: center;
 
 .copy-right p{
     text-align: center;
+    font-style: normal;
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
+    font-weight: 300;
     letter-spacing: 0.7px;
     word-spacing: 2.5px;
 }
 
+footer p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
 
+footer p a {
+    text-decoration: none;
+}
 
 /* Responsive footer styling */
 
