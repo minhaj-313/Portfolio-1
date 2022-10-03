@@ -18,9 +18,9 @@
             <!--================Navbar====================-->
             <nav>
                 <div id="mySidebar" class="sidebar">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" ><img src="images/cross.png"
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/cross.png"
                             style="height: 20px;"></a>
-                    <ul>
+                    <ul id="sidebar_link">
                         <li><a href="/">Home</li></a>
                         <li><a href="intro.html">My Intro</li></a>
                         <li><a href="services.html">Services</li></a>
@@ -32,8 +32,9 @@
         </div>
         <!--==================Main========================-->
         <div class="main" id="main">
-            <button class="openbtn" class="openbtn" onclick="openNav()" ><img src="images/menu icon.png" style="height: 20px;" onmouseover="hoverE()"></button>
-            <div class="blogcontainer">
+            <button class="openbtn" class="openbtn" onclick="openNav()"><img src="images/menu icon.png"
+                    style="height: 20px;" onmouseover="hoverE()"></button>
+            <div class="blogcontainer" id="is_blog_container">
                 <h1>Blogs by Shaikh Minhaj - Full Stack Developer</h1>
                 <div class="blogItem">
                     <h2>Learn HTML - in Fun Way</h2>
@@ -52,6 +53,7 @@
                 </div>
 
                 <div class="blogItem">
+                    
                     <h2>Learn JavaScript - in Fun Way</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus deleniti hic, unde at
                         quibusdam natus architecto consectetur voluptas rem, blanditiis id optio aspernatur cumque
@@ -60,7 +62,8 @@
                 </div>
 
                 <div class="blogItem">
-                    <h2>Learn Core Java - in Fun Way</h2>
+                    
+                    <h2>Learn JavaScript - in Fun Way</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus deleniti hic, unde at
                         quibusdam natus architecto consectetur voluptas rem, blanditiis id optio aspernatur cumque
                         voluptate alias tempore molestiae mollitia dicta?</p>
@@ -84,8 +87,7 @@
             <img src="images/btn-LB.png" alt="o" height="30px" onclick="myFunction()">
         </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 
