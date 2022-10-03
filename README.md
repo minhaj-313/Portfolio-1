@@ -1,12 +1,39 @@
-# Portfolio-1
-Hey, this is my portfolio website.
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <h1 align="center">Developer's Portfolio ✨</h1>
 
-<h2 align='left'> Languages and Tools used:</h2>
-<p align='left'> 
-<a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html" width="40" height="40"/> </a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
-<a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
+  <p align="center">
+    It is a personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects. <br />
+  Site URL / Demo: 
+    <a href="https://minhaj-313.github.io/Portfolio-1/">minhaj-313.github.io/My-Portfolio-Website</a>
+    <br />
+    <br />
+    <a href="https://minhaj-313.github.io/My-Portfolio-Website/">About Me</a>
+  </p>
 </p>
+
+![GitHub contributors](https://img.shields.io/github/contributors/minhaj-313/Portfolio-1?color=ffcc66&style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/minhaj-313/Portfolio-1?color=ffcc66&style=for-the-badge)
+[![GitHub forks](https://img.shields.io/github/forks/minhaj-313/Portfolio-1?style=for-the-badge)](https://github.com/minhaj-313/Portfolio-1/star_book/network)
+[![GitHub issues](https://img.shields.io/github/issues/minhaj-313/Portfolio-1?color=ffcc66&style=for-the-badge)](https://github.com/minhaj-313/Portfolio-1/star_book/issues)
+[![Site preview](https://user-images.githubusercontent.com/80143331/193509375-e89c6b9e-ee86-4f93-8f8d-bf4ebe1fdc7f.png)](https://minhaj-313.github.io/Portfolio-1/)
+
+
+### Technologies Used : 
+* [<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />]()HTML5
+ 
+* [<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />]()CSS3
+
+* [<img align="left" alt="Javascript" width="26px" src="https://user-images.githubusercontent.com/86334640/125635046-a7e97a85-564a-4337-a5b8-c18f9cc0aedb.png" />]()javascript
+
+
+
+### Libraries : 
+* [<img align="left" alt="Font Awesome" width="26px" src="https://www.drupal.org/files/project-images/font_awesome_logo.png" />]()[Font Awesome](https://fontawesome.com/)
+
+* [<img align="left" alt="Google Fonts" width="26px" src="https://user-images.githubusercontent.com/86334640/125142726-b52caa00-e118-11eb-829b-c14afb33c4e1.png" />]()[Google Fonts](https://fonts.google.com/)
+
 
 # Contribution Guidelines
 - Don't forget to star the repository!

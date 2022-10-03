@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>contact - Shaikh Minhaj - Full Stack Developer</title>
   <link rel="stylesheet" href="style.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="images/pic-logo.jpeg">
 </head>
 
@@ -18,8 +18,6 @@
       <!--================Navbar====================-->
       <nav>
         <div id="mySidebar" class="sidebar">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="images/cross.png"
-              style="height: 20px;"></a>
           <ul>
             <li><a href="/">Home</li></a>
             <li><a href="intro.html">My Intro</li></a>
@@ -32,7 +30,7 @@
     </div>
     <!--================Main========================-->
     <div class="main" id="main">
-      <button class="openbtn" onclick="openNav()"><img src="images/menu icon.png" style="height: 20px;" onmouseover="hoverE()"></button>
+      <button class="openbtn" id="navbtn" onclick="toggleNav()"><i class="fas fa-bars" id="hamburger"></i></button>
       <div class="contactform">
         <h1>Contact Me For Work/General Enquiries</h1>
         <!--Form-->
