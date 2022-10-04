@@ -63,9 +63,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to bottom right,
-      rgb(143 245 255),
-      rgb(255, 255, 255));
+  background-color: rgba(255, 255, 255, 0.303);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;

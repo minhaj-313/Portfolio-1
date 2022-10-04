@@ -13,14 +13,13 @@ body {
   padding: 0;
   min-height: 100vh;
   font-family: var(--font);
-  background: radial-gradient(
-    ellipse at bottom,
-    var(--bgColor) 0%,
-    var(--bgColor2) 100%
-  );
+  background: radial-gradient(ellipse at bottom,
+      var(--bgColor) 0%,
+      var(--bgColor2) 100%);
   /* background-image: url('https://bit.ly/3nFVqJh'); */
   opacity: 0;
-  animation: 1s ease-out var(--delay) 1 transitionAnimation; /* duration/timing-function/delay/iterations/name */
+  animation: 1s ease-out var(--delay) 1 transitionAnimation;
+  /* duration/timing-function/delay/iterations/name */
   animation-fill-mode: forwards;
   background-repeat: no-repeat;
   background-size: cover;
@@ -69,7 +68,8 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
-  padding: 10px; /* 17px */
+  padding: 10px;
+  /* 17px */
   text-decoration: none;
   /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
   -webkit-tap-highlight-color: transparent;
@@ -99,12 +99,10 @@ body {
 
   /*  animation   */
   overflow: hidden;
-  background: linear-gradient(
-    90deg,
-    var(--bgColor),
-    var(--accentColor),
-    var(--bgColor)
-  );
+  background: linear-gradient(90deg,
+      var(--bgColor),
+      var(--accentColor),
+      var(--bgColor));
   background-repeat: no-repeat;
   background-size: 80%;
   animation: animate 3s linear var(--delay) infinite;
@@ -119,6 +117,7 @@ body {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -129,6 +128,7 @@ body {
   0% {
     background-position: -500%;
   }
+
   100% {
     background-position: 500%;
   }
@@ -138,6 +138,7 @@ body {
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(-2000px);
   }
