@@ -32,30 +32,55 @@
     <!--================Main========================-->
     <div class="main" id="main">
       <button class="openbtn" id="navbtn" onclick="toggleNav()"><i class="fas fa-bars" id="hamburger"></i></button>
+      <div class="center">
+      <div class="typeCard">
       <div class="contactform">
-        <h1>Contact Me For Work/General Enquiries</h1>
+        <div class="upperPart">
+        <h1>Contact Me For Work/General Enquiries</h1></div>
         <!--Form-->
         <form>
           <div class="mb-3">
             <label for="clintName" class="form-label">Enter Name</label>
-            <input type="text" class="form-control" id="clintName">
+
+            <input type="text" class="form-control" id="clintName" style="font-style:italic ;font-size:large;text-align: center;margin: auto; display: block;"  placeholder="For ex : Aryan Sahoo">
           </div>
           <div class="mb-3">
             <label for="clintEmail" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="clintEmail" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="clintEmail" aria-describedby="emailHelp"style="font-style:italic ;font-size:large;text-align: center;margin: auto; display: block;" placeholder="For ex : xyz@abc.com">
           </div>
           <div class="mb-3">
             <label for="clintPhone" class="form-label">Phone Number</label>
-            <input type="phone" class="form-control" id="clintPhone">
+            <input type="phone" class="form-control" style="font-style:italic ;font-size:large;text-align: center;margin: auto; display: block;"id="clintPhone" placeholder="For ex : +91 8281738291">
             <div id="emailHelp" class="formtext-">We'll never share your email & Phone with anyone else.</div>
           </div>
           <div class="mb-3">
             <label for="clintMessage" class="form-label">Message</label>
-            <textarea type="text-area" class="form-control" id="clintMessage"></textarea>
+            <textarea type="text-area" class="form-control" style="font-style:italic ;font-size:x-large;text-align: center;margin: auto; display: block;" id="clintMessage" placeholder="Start Typing your query......"></textarea>
           </div>
-          <button type="submit" class="btn btn-sm">Submit</button>
+
+          
         </form>
+        <div class="creative">
+          <button id="btn">
+              <p id="btnText">Send To Me</p>
+              <div class="check-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                      <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                  </svg>
+              </div>
+          </button>
       </div>
+      <script type="text/javascript">
+          const btn = document.querySelector("#btn");
+          const btnText = document.querySelector("#btnText");
+  
+          btn.onclick = () => {
+              btnText.innerHTML = "Thanks";
+              btn.classList.add("active");
+          };
+      </script>
+      <br>
+      </div></div></div>
 
     </div>
 
@@ -66,6 +91,7 @@
 
     </div>
   </div>
+  
   <script src="script.js"></script>
 </body>
 
