@@ -971,12 +971,12 @@ svg path {
   transition-delay: 1s;
 }
 .upperPart {
-  background-color: #33475b;
-  font-style: oblique;
-  color: white;
-  justify-content: center;
-  text-align: center;
-  border-radius: 10px;
+ background-color: #00000057;
+    font-style: oblique;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    border-radius: 19px;
 }
 
 textarea {
