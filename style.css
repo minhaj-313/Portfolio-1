@@ -984,12 +984,11 @@ textarea {
   max-width: 640px;
 }
 .typeCard {
-  background-color: rgb(255, 122, 89);
-  text-align: center;
-
-  justify-content: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 50%;
-  border-radius: 10px;
+background-color: rgb(248 254 255 / 10%);
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    width: 50%;
+    border-radius: 19px;
 }
