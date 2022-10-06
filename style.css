@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   margin: 0;
@@ -37,7 +38,6 @@ body {
 }
 
 body {
-
   padding: 25px;
   background-color: black;
   color: white;
@@ -47,7 +47,6 @@ body {
   background-color: black;
   color: beige;
   font-size: 25px;
-
 }
 
 .dark-mode {
@@ -76,25 +75,24 @@ body {
   color: rgb(0, 0, 0);
   display: block;
   transition: 0.3s;
-  position: relative;  /*changed*/
+  position: relative; /*changed*/
 }
 
-
 /*sidebar hover effect starts*/
-.sidebar a::after{
-  content: '';
+.sidebar a::after {
+  content: "";
   position: absolute;
   width: 100%;
   height: 0.175rem;
   left: 0;
   bottom: 0;
   background: #0000ff;
-  transform: scale(0,1);
+  transform: scale(0, 1);
   transition: transform 0.5s ease;
 }
 
-.sidebar a:hover::after{
-  transform: scale(1,1);
+.sidebar a:hover::after {
+  transform: scale(1, 1);
 }
 /*sidebar hover ends*/
 
@@ -106,7 +104,6 @@ body {
   margin-left: 50px;
 }
 
-
 .openbtn {
   font-size: 20px;
   cursor: pointer;
@@ -116,7 +113,6 @@ body {
   border: none;
   float: left;
 }
-
 
 #main {
   transition: margin-left 0.5s;
@@ -130,12 +126,11 @@ body {
 
 .container {
   display: flex;
-  
+
   /* overflow: hidden; */
 }
 
 .infoContainer {
-
   /* background-color: rgb(242, 0, 255); */
   height: 58vh;
   width: 80vw;
@@ -151,15 +146,14 @@ body {
   display: flex;
   justify-content: space-around;
   padding-left: 20px;
-
 }
 
 .devInfo {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Fira Sans', sans-serif;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Source Code Pro", monospace;
 }
 
 .hello {
@@ -177,7 +171,6 @@ body {
   margin-bottom: 20px;
 }
 
-
 .about {
   margin-top: 10px;
   font-size: 30px;
@@ -190,7 +183,6 @@ body {
   color: #e7d8d8;
   font-size: 20px;
   margin-top: 15px;
-
 }
 
 .buttons {
@@ -202,9 +194,11 @@ body {
   padding: 9px 14px;
   border-radius: 18px;
   color: white;
-  background-image: linear-gradient(to bottom right,
-      rgb(0, 255, 255),
-      rgb(17, 0, 255));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 255, 255),
+    rgb(17, 0, 255)
+  );
   font-size: 21px;
   font-weight: bold;
   margin: 0 3px;
@@ -213,14 +207,16 @@ body {
   padding: 9px 14px;
   border-radius: 18px;
   color: white;
-  background-image: linear-gradient(to bottom right, rgb(0, 50, 255), rgb(0, 0, 255));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 50, 255),
+    rgb(0, 0, 255)
+  );
   font-size: 21px;
   font-weight: bold;
   margin: 0 3px;
   cursor: pointer;
   border-color: blue;
-
-
 }
 
 footer {
@@ -231,14 +227,15 @@ footer {
 .btn-sm {
   font-size: 14px;
   padding: 10px 19px;
+  background-color: beige;
   margin: 12px 0;
 }
 
 .btn:hover {
   color: #ffffff;
   background-color: white;
-  box-shadow: 0 0 5px #00e5ff, 0 0 10px rgba(0, 238, 255, 0.8),
-    0 0 15px rgba(0, 251, 255, 0.7), 0 0 30px rgba(0, 200, 255, 0.6);
+  box-shadow: 0 0 5px #00e5ff, 0 0 10px rgba(9, 168, 59, 0.8),
+    0 0 15px rgba(11, 101, 103, 0.7), 0 0 30px rgba(0, 200, 255, 0.6);
   border-color: rgb(0, 55, 255);
 }
 
@@ -309,7 +306,7 @@ footer {
 
 .slider:before {
   position: absolute;
-  content: '';
+  content: "";
   height: 26px;
   width: 26px;
   left: 4px;
@@ -319,15 +316,15 @@ footer {
   transition: 0.4s;
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: #2200ff;
 }
 
-input:focus+.slider {
+input:focus + .slider {
   box-shadow: 0 0 1px #c2e4ff;
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -402,11 +399,9 @@ input:checked+.slider:before {
 }
 
 .blogItem p {
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: .5px;
-  font-size: 1.2rem
-  /* text-shadow: 1px 2px 2px rgba(7, 7, 7, 0.485); */
-  ;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 1.2rem /* text-shadow: 1px 2px 2px rgba(7, 7, 7, 0.485); */;
 }
 
 .blogItem h2 {
@@ -416,8 +411,6 @@ input:checked+.slider:before {
   font-family: "Montserrat", sans-serif;
 }
 
-
-
 h1 {
   font-family: "Montserrat", sans-serif;
   margin: 23px;
@@ -425,16 +418,16 @@ h1 {
 }
 
 p {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 .intro h2 {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   margin: 12px;
 }
 
 .intro p {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   margin: 12px;
 }
 
@@ -449,7 +442,7 @@ p {
   .contactform {
     padding: 10px 27px;
     padding-top: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   .contactform form div input {
@@ -480,7 +473,7 @@ p {
   .contactform {
     padding: 2px 37px;
     padding-top: 32px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   .contactform form div input {
@@ -510,7 +503,7 @@ p {
   .contactform {
     padding: 0px 50px;
     padding-top: 35px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 }
 
@@ -548,7 +541,6 @@ p {
   cursor: pointer;
 }
 
-
 .infoContainer {
   /* background-color: rgb(242, 0, 255); */
   height: 59vh;
@@ -558,8 +550,6 @@ p {
   justify-content: space-around;
   padding-left: 15px;
 }
-
-
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -593,7 +583,7 @@ p {
   .contactform {
     padding: 2px 65px;
     padding-top: 22px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 }
 
@@ -614,9 +604,11 @@ p {
     padding: 10px 14px;
     border-radius: 18px;
     color: white;
-    background-image: linear-gradient(to bottom right,
-        rgb(0, 255, 255),
-        rgb(17, 0, 255));
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(0, 255, 255),
+      rgb(17, 0, 255)
+    );
     font-size: 15px;
     font-weight: bold;
     margin: 31px 3px;
@@ -628,14 +620,17 @@ p {
     padding: 10px 14px;
     border-radius: 18px;
     color: white;
-    background-image: linear-gradient(to bottom right, rgb(0, 50, 255), rgb(0, 0, 255));
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(0, 50, 255),
+      rgb(0, 0, 255)
+    );
     font-size: 15px;
     font-weight: bold;
     margin: 31px 3px;
     cursor: pointer;
     border-color: #0000ff;
   }
-
 }
 
 /* width */
@@ -664,7 +659,6 @@ p {
   margin-top: 30px;
 }
 
-
 .fab {
   width: 60px;
   /* height: auto; */
@@ -676,8 +670,6 @@ p {
   padding: 20px;
   border-radius: 100%;
 }
-
-
 
 .fab:hover {
   opacity: 0.9;
@@ -706,9 +698,7 @@ p {
 .fa-twitter {
   /* background: #1aa3ff; */
   color: white;
-
 }
-
 
 .fa-linkedin {
   /* background:  #3333ff; */
@@ -726,7 +716,6 @@ footer {
   font-size: small;
 }
 
-
 .section-title {
   text-align: center;
   color: #ddd;
@@ -741,7 +730,7 @@ footer {
   position: absolute;
   left: 0;
   bottom: -10px;
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
   background: #82ccdd;
@@ -756,7 +745,8 @@ footer {
 } */
 
 .services-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bp.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(bp.jpg);
   background-size: cover;
   padding: 60px 0;
 }
@@ -855,7 +845,6 @@ footer {
   font-size: 14px;
 }
 
-
 #mySidebar.show {
   width: 250px;
 }
@@ -866,28 +855,28 @@ footer {
 
 #hamburger {
   font-size: 1.8rem;
-
 }
 
 #navbtn .fas.fa-bars {
   font-size: 1.8rem;
   color: #000;
-
 }
 
 #navbtn {
   width: 2.5rem;
   height: 2rem;
-  background-color: linear-gradient(to right, rgb(236, 72, 153), rgb(239, 68, 68), rgb(234, 179, 8));
-  ;
+  background-color: linear-gradient(
+    to right,
+    rgb(236, 72, 153),
+    rgb(239, 68, 68),
+    rgb(234, 179, 8)
+  );
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   align-items: center;
-
 }
-
 
 @media screen and (max-width: 960px) {
   .service-box {
@@ -905,4 +894,102 @@ footer {
   .service-box {
     max-width: 100%;
   }
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.creative {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 270px;
+  height: 80px;
+  border: none;
+  outline: none;
+  background: #2f2f2f;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.check-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  box-shadow: 0 0 12px -2px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: -40px;
+  opacity: 0;
+}
+
+.check-box svg {
+  width: 40px;
+  margin: 20px;
+}
+
+svg path {
+  stroke-width: 3;
+  stroke: #fff;
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+  stroke-linecap: round;
+}
+
+.active {
+  background: #ff2b75;
+  transition: 1s;
+}
+
+.active .check-box {
+  right: 0;
+  opacity: 1;
+  transition: 1s;
+}
+
+.active p {
+  margin-right: 125px;
+  transition: 1s;
+}
+
+.active svg path {
+  stroke-dashoffset: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
+.upperPart {
+  background-color: #33475b;
+  font-style: oblique;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+textarea {
+  resize: none;
+  max-width: 640px;
+}
+.typeCard {
+  background-color: rgb(255, 122, 89);
+  text-align: center;
+
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 50%;
+  border-radius: 10px;
 }
