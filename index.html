@@ -20,6 +20,9 @@
 </head>
 
 <body>
+    
+    <div id="preloader"></div>
+
     <div class="container">
 
         <div class="sidebar">
@@ -147,6 +150,14 @@
         <p><span>Author</span>: Shaikh Minhaj</p>
         <p><span>Email: </span><a href="mailto:Shaikhumarms999@gmail.com">Shaikhumarms999@gmail.com</a></p>
     </footer>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        })
+        
+    </script>
 
 </body>
 

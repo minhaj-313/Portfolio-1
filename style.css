@@ -10,6 +10,15 @@
   box-sizing: border-box;
 }
 
+#preloader{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff 
+  url(https://flevix.com/wp-content/uploads/2019/07/Line-Preloader.gif) no-repeat center;
+  z-index: 99999;
+}
+
 html,
 body {
   width: 100%;
