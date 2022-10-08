@@ -38,47 +38,40 @@
         <div class="upperPart">
         <h1>Contact Me For Work/General Enquiries</h1></div>
         <!--Form-->
-        <form>
+        <form action="Thankyou.html">
           <div class="mb-3">
             <label for="clintName" class="form-label">Enter Name</label>
 
-            <input type="text" class="form-control" id="clintName" style="font-style:italic ;font-size:large;text-align: center;margin: auto; display: block;"  placeholder="For ex : Shaikh Minhaj">
+            <input type="text" class="form-control" id="clintName" style="font-style:italic ;font-size:large;text-align: center;margin: auto; display: block;"  placeholder="For ex : Shaikh Minhaj" required>
           </div>
           <div class="mb-3">
             <label for="clintEmail" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="clintEmail" aria-describedby="emailHelp"style="font-style:italic ;font-size:large;text-align: center;margin: auto; display: block;" placeholder="For ex : xyz@abc.com">
+            <input type="email" class="form-control" id="clintEmail" aria-describedby="emailHelp"style="font-style:italic ;font-size:large;text-align: center;margin: auto; display: block;" placeholder="For ex : xyz@abc.com" required>
           </div>
           <div class="mb-3">
             <label for="clintPhone" class="form-label">Phone Number</label>
-            <input type="phone" class="form-control" style="font-style:italic ;font-size:large;text-align: center;margin: auto; display: block;"id="clintPhone" placeholder="For ex : +91 9999999999">
+            <input type="phone" class="form-control" style="font-style:italic ;font-size:large;text-align: center;margin: auto; display: block;"id="clintPhone" placeholder="For ex :6302425548" pattern="[6789][0-9]{9}">
             <div id="emailHelp" class="formtext-">We'll never share your email & Phone with anyone else.</div>
           </div>
           <div class="mb-3">
             <label for="clintMessage" class="form-label">Message</label>
-            <textarea type="text-area" class="form-control" style="font-style:italic ;font-size:x-large;text-align: center;margin: auto; display: block;" id="clintMessage" placeholder="Start Typing your query......"></textarea>
+            <textarea type="text-area" class="form-control" style="font-style:italic ;font-size:x-large;text-align: center;margin: auto; display: block;" id="clintMessage" placeholder="Start Typing your query......" required></textarea>
           </div>
-
+          <button > <input type="submit"  value="Send"   ></input></button>
           
+          
+          
+
         </form>
-        <div class="creative">
-          <button id="btn">
-              <p id="btnText">Send To Me</p>
-              <div class="check-box">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-                      <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                  </svg>
-              </div>
-          </button>
-      </div>
+          
+        
       <script type="text/javascript">
-          const btn = document.querySelector("#btn");
-          const btnText = document.querySelector("#btnText");
-  
-          btn.onclick = () => {
-              btnText.innerHTML = "Thanks";
-              btn.classList.add("active");
-          };
-      </script>
+           
+   
+    
+
+
+      </script> 
       <br>
       </div></div></div>
 

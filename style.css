@@ -1001,3 +1001,17 @@ background-color: rgb(248 254 255 / 10%);
     width: 50%;
     border-radius: 19px;
 }
+ input[type="submit"]{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.Thankyou{
+  
+  font-weight: 600;
+  font-family: 'Trebuchet MS', sans-serif;
+}
