@@ -353,13 +353,14 @@ input:checked+.slider:before {
 /* ==================Contact Page CSS====================== */
 
 .contactform {
-    padding: 0 34px;
-    padding-top: 144px;
-    font-family: "Montserrat", sans-serif;
+    /* padding: 0 34px; */
+    /* padding-top: 144px; */
+    font-family: "Nunito";
+    margin: 3% 0;
 }
 
 .contactform h1 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Nunito";
     padding: 12px 0;
 }
 
@@ -370,10 +371,10 @@ input:checked+.slider:before {
 }
 
 .contactform form div input {
-    width: 26vw;
+    width: 1rem;
     border-radius: 5px;
     margin: 6px 0 0 0;
-    padding: 3px;
+    padding: 1px;
 }
 
 #emailHelp {
@@ -389,6 +390,10 @@ input:checked+.slider:before {
     border-radius: 5px;
     margin: 6px 0 0 0;
     padding: 3px;
+}
+
+.form-label {
+    font-size: 20px;
 }
 
 
@@ -972,11 +977,12 @@ svg path {
 
 .upperPart {
     background-color: #00000057;
-    font-style: oblique;
+    /* font-style: oblique; */
     color: white;
     justify-content: center;
     text-align: center;
     border-radius: 19px;
+    font-size: 20px;
 }
 
 textarea {
@@ -992,22 +998,20 @@ textarea {
     transition: 0.3s;
     width: 50%;
     border-radius: 19px;
-
+    margin-bottom: 2.5%;
 }
 
-}
- input[type="submit"]{
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
-.Thankyou{
-  
-  font-weight: 600;
-  font-family: 'Trebuchet MS', sans-serif;
+input[type="submit"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 
+.Thankyou {
+    font-weight: 600;
+    font-family: 'Trebuchet MS', sans-serif;
+}
