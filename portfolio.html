@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/pic-logo.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <!--================Navbar====================-->
+        <nav>
+          <div id="mySidebar" class="sidebar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="intro.html">My Intro</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li>
+                <a href="images\Shaikh Minhaj - Resume.pdf" target="_blank"
+                  >Resume</a
+                >
+              </li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+              <li><a href="linktree.html">Links</a></li>
+              <li><a href="portfolio.html">Portfolio Gallery</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--================Main========================-->
+      <div class="main" id="main">
+        <button class="openbtn" onclick="toggleNav()">
+          <i class="fas fa-bars" id="hamburger"></i>
+        </button>
+
+        <div class="gallery-head">
+          <h1>Portfolio Gallery</h1>
+          <div class="gallery-navigation">
+            <ul>
+              <li class="filter-btns" onclick="filterAll()">All</li>
+              <li class="filter-btns" onclick="handleFilter1()">Section 1</li>
+              <li class="filter-btns" onclick="handleFilter2()">Section 2</li>
+              <li class="filter-btns" onclick="handleFilter3()">Section 3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <div class="gallery-row">
+            <div class="image-box box-1">
+              <div class="content">
+                <img src="images/image4.jpg" alt="images" />
+                <h4>computers</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="image-box box-2">
+              <div class="content">
+                <img src="images/image2.jpg" alt="images" />
+                <h4>computers</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="image-box box-3">
+              <div class="content">
+                <img src="images/image3.jpg" alt="images" />
+                <h4>computers</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="image-box box-1">
+              <div class="content">
+                <img src="images/image4.jpg" alt="images" />
+                <h4>computers</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="image-box box-2">
+              <div class="content">
+                <img src="images/image3.jpg" alt="images" />
+                <h4>computers</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="image-box box-3">
+              <div class="content">
+                <img src="images/image2.jpg" alt="images" />
+                <h4>computers</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="image-box box-1">
+              <div class="content">
+                <img src="images/image3.jpg" alt="images" />
+                <h4>computers</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="image-box box-2">
+              <div class="content">
+                <img src="images/image4.jpg" alt="images" />
+                <h4>computers</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="image-box box-3">
+              <div class="content">
+                <img src="images/image3.jpg" alt="images" />
+                <h4>computers</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="image-box box-1">
+              <div class="content">
+                <img src="images/image2.jpg" alt="images" />
+                <h4>computers</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="image-box box-2">
+              <div class="content">
+                <img src="images/image3.jpg" alt="images" />
+                <h4>computers</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="image-box box-3">
+              <div class="content">
+                <img src="images/image4.jpg" alt="images" />
+                <h4>computers</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--================Footer====================-->
+
+    <footer>
+      <div class="copy-right">
+        <p>&#xa9; Copyright 2022 - All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
