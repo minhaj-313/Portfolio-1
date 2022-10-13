@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="" width=device-width, initial-scale=1.0>
+    <title>Shaikh Minhaj - Full Stack Developer</title>
+    <link rel="icon" type="image/x-icon" href="images/pic-logo.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./footer.css">
+    <!--
+    =====================================
+    Website Build By : Shaikh Minhaj
+    > Portfolio Website of Shaikh Minhaj
+    > Using Only HTML, CSS, Js
+    =====================================
+-->
+</head>
+
+<body>
+    
+    <div id="preloader"></div>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <!--================Navbar====================-->
+            <nav>
+                <div id="mySidebar" class="sidebar">
+                    <ul>
+                        <li><a href="index.html">Home</li></a>
+                        <li><a href="intro.html">My Intro</li></a>
+                        <li><a href="services.html">Services</li></a>
+                        <li><a href="images/Shaikh Minhaj Resume.pdf" target="_blank">Resume</a></li></a>
+                        <li><a href="blog.html">Blog</li></a>
+                        <li><a href="contact.html">Contact Me</li></a>
+                        <li><a href="linktree.html">Links</li></a>
+                    </ul>
+            </nav>
+        </div>
+        <!--================Main========================-->
+        <div class="main" id="main">
+            <button class="openbtn" onclick="toggleNav()">
+                <i class="fas fa-bars" id="hamburger"></i>
+            </button>
+            <div class="infoContainer">
+                <div class="devInfo">
+                    
+                       
+                    
+                    <h2 class="Thankyou">Thank you! will reach out you soon❤️😊
+                    </h2>
+
+                    <div class="buttons">
+                        <a href="images/Shaikh Minhaj Resume.pdf" target="_blank"> <button class="btn">Download
+                                Resume</button></a>
+              
+
+                        <div class="icon-socials">
+                            <a href="https://www.linkedin.com/in/shaikh-minhaj-softwareengineer/"
+                                class="fab fa-linkedin"></a>
+                            <a href="https://www.instagram.com/minhaj_313" class="fab fa-instagram"></a>
+                            <a href="https://www.facebook.com/minhaj.shaikh.5836711" class="fab fa-facebook"></a>
+                            <a href="https://twitter.com/minhaj_313" class="fab fa-twitter"></a>
+                            <a href="https://github.com/minhaj-313" class="fab fa-github"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="devPic">
+                    <img src="images/pic-logo.jpeg" alt="Shaikh Miinhaj" height="150px">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <img src="images/btn-LB.png" alt="o" height="30px" onclick="toggleDarkMode()">
+    </div>
+
+    
+    <script src="script.js"></script>
+
+
+    
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        })
+        
+    </script>
+
+</body>
+
+</html>

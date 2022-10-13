@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -75,6 +76,8 @@ body {
   color: rgb(0, 0, 0);
   display: block;
   transition: 0.3s;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
 }
 
 .sidebar a:hover {
@@ -95,13 +98,31 @@ body {
   cursor: pointer;
   background-color: transparent;
   color: #fff;
-  padding:5px;
+  padding: 5px;
   border: 2px solid white;
-  border-radius:12px;
-  margin-bottom: 15px;;
- /* float: left;*/
+  border-radius: 12px;
+  margin-bottom: 15px;
+  ;
+  /* float: left;*/
 }
 
+
+/*sidebar hover effect starts*/
+.sidebar a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  left: 0;
+  bottom: 0;
+  background: #0000ff;
+  transform: scale(0,1);
+  transition: transform 0.5s ease;
+}
+
+.sidebar a:hover::after{
+  transform: scale(1,1);
+}
 
 #main {
   transition: margin-left 0.5s;
@@ -276,10 +297,11 @@ footer {
 
 .devPic-2 img {
   height: 25vh;
-  margin:20px 45%;
-  border:5px solid rgb(239, 239, 231);
-  width:160px;
-  border-radius: 50px;;
+  margin: 20px 45%;
+  border: 5px solid rgb(239, 239, 231);
+  width: 160px;
+  border-radius: 50px;
+  ;
 
 }
 
@@ -410,7 +432,7 @@ input:checked+.slider:before {
   font-family: serif;
   letter-spacing: .5px;
   font-size: 1.2rem
-  /* text-shadow: 1px 2px 2px rgba(7, 7, 7, 0.485); */
+    /* text-shadow: 1px 2px 2px rgba(7, 7, 7, 0.485); */
   ;
 }
 
@@ -656,7 +678,7 @@ p {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  
+
   border-radius: 8px;
 }
 

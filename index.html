@@ -20,6 +20,9 @@
 </head>
 
 <body>
+    
+    <div id="preloader"></div>
+
     <div class="container">
 
         <div class="sidebar">
@@ -30,7 +33,7 @@
                         <li><a href="index.html">Home</li></a>
                         <li><a href="intro.html">My Intro</li></a>
                         <li><a href="services.html">Services</li></a>
-                        <li><a href="images\Shaikh Minhaj - Resume.pdf" target="_blank">Resume</a></li></a>
+                        <li><a href="images/Shaikh Minhaj Resume.pdf" target="_blank">Resume</a></li></a>
                         <li><a href="blog.html">Blog</li></a>
                         <li><a href="contact.html">Contact Me</li></a>
                         <li><a href="linktree.html">Links</li></a>
@@ -63,7 +66,7 @@
                     </div>
 
                     <div class="buttons">
-                        <a href="images\Shaikh Minhaj - Resume.pdf" target="_blank"> <button class="btn">Download
+                        <a href="images/Shaikh Minhaj Resume.pdf" target="_blank"> <button class="btn">Download
                                 Resume</button></a>
                         <a href="contact.html"> <button class="btn">Contact Me</button></a>
 
@@ -147,6 +150,13 @@
         <p><span>Author</span>: Shaikh Minhaj</p>
         <p><span>Email: </span><a href="mailto:Shaikhumarms999@gmail.com">Shaikhumarms999@gmail.com</a></p>
     </footer>
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none"
+        }) 
+    </script>
 
 </body>
 

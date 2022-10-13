@@ -2,70 +2,91 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>contact - Shaikh Minhaj - Full Stack Developer</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="images/pic-logo.jpeg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact - Shaikh Minhaj - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/pic-logo.jpeg">
 </head>
 
 <body>
-  <div class="container">
+    <div class="container">
 
-    <div class="sidebar">
-      <!--================Navbar====================-->
-      <nav>
-        <div id="mySidebar" class="sidebar">
-          <ul>
-            <li><a href="index.html">Home</li></a>
-            <li><a href="intro.html">My Intro</li></a>
-            <li><a href="services.html">Services</li></a>
-            <li><a href="images\Shaikh Minhaj - Resume.pdf" target="_blank">Resume</a></li></a>
-            <li><a href="blog.html">Blog</li></a>
-            <li><a href="contact.html">Contact Me</li></a>
-          </ul>
-      </nav>
-    </div>
-    <!--================Main========================-->
-    <div class="main" id="main">
-      <button class="openbtn" id="navbtn" onclick="toggleNav()"><i class="fas fa-bars" id="hamburger"></i></button>
-      <div class="contactform">
-        <h1>Contact Me For Work/General Enquiries</h1>
-        <!--Form-->
-        <form>
-          <div class="mb-3">
-            <label for="clintName" class="form-label">Enter Name</label>
-            <input type="text" class="form-control" id="clintName">
-          </div>
-          <div class="mb-3">
-            <label for="clintEmail" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="clintEmail" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <label for="clintPhone" class="form-label">Phone Number</label>
-            <input type="phone" class="form-control" id="clintPhone">
-            <div id="emailHelp" class="formtext-">We'll never share your email & Phone with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="clintMessage" class="form-label">Message</label>
-            <textarea type="text-area" class="form-control" id="clintMessage"></textarea>
-          </div>
-          <button type="submit" class="btn btn-sm">Submit</button>
-        </form>
-      </div>
+        <div class="sidebar">
+            <!--================Navbar====================-->
+            <nav>
+                <div id="mySidebar" class="sidebar">
+                    <ul>
+                        <li><a href="index.html">Home</li></a>
+                            <li><a href="intro.html">My Intro</li></a>
+                                <li><a href="services.html">Services</li></a>
+                                    <li><a href="images/Shaikh Minhaj Resume.pdf" target="_blank">Resume</a></li>
+                                    </a>
+                                    <li><a href="blog.html">Blog</li></a>
+                                        <li><a href="contact.html">Contact Me</li></a>
+                                            <li><a href="linktree.html">Links</li></a>
+                    </ul>
+            </nav>
+            </div>
+            <!--================Main========================-->
+            <div class="main" id="main">
+                <button class="openbtn" onclick="toggleNav()"><i class="fas fa-bars" id="hamburger"></i></button>
+                <div class="center">
+                    <div class="typeCard">
+                        <div class="contactform">
+                            <div class="upperPart">
+                                <h1>Contact Me For Work/General Enquiries</h1>
+                            </div>
+                            <!--Form-->
+                            <form action="Thankyou.html">
+                                <div class="mb-3">
+                                    <label for="clintName" class="form-label">Enter Name</label>
 
-    </div>
+                                    <input type="text" class="form-control" id="clintName" style="font-size:small;text-align: center;margin: auto; display: block;" placeholder="For ex : Shaikh Minhaj" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="clintEmail" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="clintEmail" aria-describedby="emailHelp" style="font-size:small;text-align: center;margin: auto; display: block;" placeholder="For ex : xyz@abc.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="clintPhone" class="form-label">Phone Number</label>
+                                    <input type="phone" class="form-control" style="font-size:small;text-align: center;margin: auto; display: block;" id="clintPhone" placeholder="For ex :6302425548" pattern="[6789][0-9]{9}">
+                                    <div id="emailHelp" class="formtext-">We'll never share your email & Phone with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="clintMessage" class="form-label">Message</label>
+                                    <textarea type="text-area" class="form-control" style="font-size:medium;text-align: center;margin: auto; display: block;" id="clintMessage" placeholder="Start Typing your query......"></textarea>
+                                </div>
+                                <input class="contact-btn" style="padding: 1% 10%;
+                                border-radius: 4px; margin-top:6px;
+                                border: 2px solid #efefef;
+                                background-color: transparent;
+                                font-size: 18px;" type="submit" value="Send" />
 
-    <div>
+
+                            </form>
 
 
-      <img src="images/btn-LB.png" alt="o" height="30px" onclick="myFunction()">
+                            <script type="text/javascript">
+                            </script>
+                            <br>
+                        </div>
+                    </div>
+                </div>
 
-    </div>
-  </div>
-  <script src="script.js"></script>
+            </div>
+
+            <div>
+
+
+                <img src="images/btn-LB.png" alt="o" height="30px" onclick="myFunction()">
+
+            </div>
+        </div>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
