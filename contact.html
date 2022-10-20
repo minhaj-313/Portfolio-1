@@ -35,35 +35,31 @@
                 <button class="openbtn" onclick="toggleNav()"><i class="fas fa-bars" id="hamburger"></i></button>
                 <div class="center">
                     <div class="typeCard">
+
                         <div class="contactform">
                             <div class="upperPart">
-                                <h1>Contact Me For Work/General Enquiries</h1>
+                                <h1>Contact Me </h1>
                             </div>
                             <!--Form-->
                             <form action="Thankyou.html">
                                 <div class="mb-3">
-                                    <label for="clintName" class="form-label">Enter Name</label>
+                                    <label for="clintName" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="clintName"  placeholder="For ex : Shaikh Minhaj" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="clintEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="clintEmail" aria-describedby="emailHelp" placeholder="For ex : xyz@abc.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="clintPhone" class="form-label">Phone</label>
+                                    <input type="phone" class="form-control"  id="clintPhone" placeholder="For ex :6302425548" pattern="[6789][0-9]{9}">
 
-                                    <input type="text" class="form-control" id="clintName" style="font-size:small;text-align: center;margin: auto; display: block;" placeholder="For ex : Shaikh Minhaj" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="clintEmail" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="clintEmail" aria-describedby="emailHelp" style="font-size:small;text-align: center;margin: auto; display: block;" placeholder="For ex : xyz@abc.com" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="clintPhone" class="form-label">Phone Number</label>
-                                    <input type="phone" class="form-control" style="font-size:small;text-align: center;margin: auto; display: block;" id="clintPhone" placeholder="For ex :6302425548" pattern="[6789][0-9]{9}">
-                                    <div id="emailHelp" class="formtext-">We'll never share your email & Phone with anyone else.</div>
                                 </div>
                                 <div class="mb-3">
                                     <label for="clintMessage" class="form-label">Message</label>
-                                    <textarea type="text-area" class="form-control" style="font-size:medium;text-align: center;margin: auto; display: block;" id="clintMessage" placeholder="Start Typing your query......"></textarea>
+                                    <textarea type="text-area" class="form-control" id="clintMessage" placeholder="Start Typing your query......"></textarea>
                                 </div>
-                                <input class="contact-btn" style="padding: 1% 10%;
-                                border-radius: 4px; margin-top:6px;
-                                border: 2px solid #efefef;
-                                background-color: transparent;
-                                font-size: 18px;" type="submit" value="Send" />
+                                <button class="contact-btn" type="submit" value="Send">Submit</button>
 
 
                             </form>

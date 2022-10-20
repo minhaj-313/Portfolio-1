@@ -30,6 +30,11 @@ body {
     font-family: sans-serif;
 }
 
+::placeholder { 
+    color: rgb(255, 255, 255);
+  }
+
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -356,7 +361,7 @@ input:checked+.slider:before {
     /* padding: 0 34px; */
     /* padding-top: 144px; */
     font-family: "Nunito";
-    margin: 3% 0;
+/*  margin: 3% 0; */
 }
 
 .contactform h1 {
@@ -392,9 +397,14 @@ input:checked+.slider:before {
     padding: 3px;
 }
 
-.form-label {
-    font-size: 20px;
+form{
+    padding:10px;
 }
+.form-label {
+    margin-top: 15px;
+    /* margin-right: 15px; */
+}
+
 
 
 /* ==================Blog Page CSS====================== */
@@ -430,11 +440,14 @@ input:checked+.slider:before {
     font-family: "Montserrat", sans-serif;
 }
 
-h1 {
+
+.upperpart h1 {
     font-family: "Montserrat", sans-serif;
-    margin: 23px;
+    /* margin: 23px; */
     padding-left: 20px;
+    margin-bottom: 0;
 }
+
 
 p {
     font-family: "Source Code Pro", monospace;
@@ -467,19 +480,46 @@ p {
         font-family: "Poppins", sans-serif;
     }
     .contactform form div input {
-        width: 61vw;
-        border-radius: 5px;
-        margin: 3px 0 0 0;
+        width: 80%;
+        border-radius: 15px;
+        margin: 13px 0 0 35px;
         padding: 10px;
         font-size: 20px;
+        outline: none;
+        color: white;
+        background-color: transparent;
+        border:2px solid rgb(255, 255, 255);
+      
     }
     #clintMessage {
-        width: 61vw;
-        height: 23vw;
-        border-radius: 5px;
-        margin: 6px 0 0 0;
+       
+        width: 80%;
+        height: 23vh;
+        border-radius: 15px;
+        margin: 13px 0 0 13px;
         padding: 9px;
+        outline: none;
+        color: white;
+        background-color: transparent;
+        border:2px solid rgb(255, 255, 255);
+        
     }
+    .contactform form div input:hover,#clintMessage:hover{
+        box-shadow: 0 7px 7px -5px;
+    }
+    .contact-btn{
+        width:30%;
+        color:rgb(255, 255, 255);
+        border:2px solid rgb(255, 255, 255);
+        border-radius: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: transparent;
+    }
+    .contact-btn:hover{
+        box-shadow: 0 7px 7px -5px;
+    }
+   
     .btn-sm {
         /* font-size: 19px;
         padding: 9px 29px;
@@ -497,18 +537,43 @@ p {
         font-family: "Poppins", sans-serif;
     }
     .contactform form div input {
-        width: 61vw;
-        border-radius: 5px;
-        margin: 10px 0 0 0;
+        width: 80%;
+        border-radius: 15px;
+        margin: 13px 0 0 35px;
         padding: 11px;
+        color: white;
+        background-color: transparent;
+        border:2px solid rgb(255, 255, 255);
+        outline: none;
     }
     #clintMessage {
-        width: 61vw;
-        height: 15vw;
-        border-radius: 5px;
-        margin: 9px 0 0 0;
+        width: 80%;
+        height: 15vh;
+        border-radius: 15px;
+        margin: 13px 0 0 13px;
         padding: 5px;
+        outline: none;
+        color: white;
+        background-color: transparent;
+        border:2px solid rgb(255, 255, 255);
+        
     }
+    .contactform form div input:hover,#clintMessage:hover{
+        box-shadow: 0 7px 7px -5px;
+    }
+    .contact-btn{
+        width:30%;
+        color:rgb(255, 255, 255);
+        border:2px solid rgb(255, 255, 255);
+        border-radius: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: transparent;
+    }
+    .contact-btn:hover{
+        box-shadow: 0 7px 7px -5px;
+    }
+    
     .btn-sm {
         /* font-size: 18px;
         padding: 11px 22px;
@@ -584,21 +649,49 @@ p {
     .contactform form div {
         padding: 14px 28px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        font-size: 15px;
+        text-align: left;
     }
     .contactform form div input {
-        width: 31vw;
-        border-radius: 5px;
-        margin: 10px 0 0 0;
+        width:80%;
+        border-radius: 15px;
+        margin: 13px 0 0 35px;
         padding: 13px;
+        color: white;
+        border:2px solid rgb(255, 255, 255);
+        outline:none;
+        background-color:transparent;
     }
     #clintMessage {
-        width: 31vw;
-        height: 6vw;
-        border-radius: 5px;
-        margin: 3px 0 0 0;
+        width: 80%;
+        height: 20vh;
+        border-radius: 15px;
+        margin: 13px 0 0 13px;
         padding: 13px;
+        outline: none;
+        color: white;
+        background-color: transparent;
+        border:2px solid rgb(255, 255, 255);
     }
+    .contactform form div input:hover,#clintMessage:hover{
+        box-shadow: 0 7px 7px -5px;
+    }
+    .contact-btn{
+        width:30%;
+        color:rgb(255, 255, 255);
+        border:2px solid rgb(255, 255, 255);
+        border-radius: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: transparent;
+    }
+    .contact-btn:hover{
+        box-shadow: 0 7px 7px -5px;
+    }
+    
+    
+    
     .btn-sm {
         /* font-size: 20px;
         padding: 8px 25px;
@@ -649,6 +742,21 @@ p {
         cursor: pointer;
         border-color: #0000ff;
     } */
+   
+    .contact-btn{
+        width:50%;
+        color:rgb(255, 255, 255);
+        border:2px solid rgb(255, 255, 255);
+        border-radius: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: transparent;
+        font-size: 12px;
+    }
+    .contact-btn:hover{
+        box-shadow: 0 7px 7px -5px;
+    }
+    
 }
 
 
@@ -975,15 +1083,23 @@ svg path {
     transition-delay: 1s;
 }
 
+
 .upperPart {
-    background-color: #00000057;
+    /* background-color: #00000057; */
     /* font-style: oblique; */
-    color: white;
-    justify-content: center;
-    text-align: center;
-    border-radius: 19px;
+    /* color: white; */
+    /* justify-content: center;
+    text-align: center; */
+    /* border-radius: 19px; */
     font-size: 20px;
+    background-image: url('images/contact-bg-img.jpeg');
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover;
+    height: 25vh;  
+    margin: auto; 
 }
+
 
 textarea {
     resize: none;
