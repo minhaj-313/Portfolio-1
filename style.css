@@ -24,7 +24,7 @@ body {
 }
 
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #ee07a1, #e910a0, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     font-family: sans-serif;
@@ -71,7 +71,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.303);
+    background-color: rgba(12, 253, 64, 0.303);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
