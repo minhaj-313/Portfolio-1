@@ -81,7 +81,7 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: rgb(0, 0, 0);
+    color:#fff;
     display: block;
     transition: 0.3s;
     position: relative;
@@ -91,15 +91,8 @@ body {
 
 /*sidebar hover effect starts*/
 
-.sidebar a::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0.175rem;
-    left: 0;
-    bottom: 0;
-    background: #0000ff;
-    transform: scale(0, 1);
+.sidebar a:hover {
+    color: #0000ff;
     transition: transform 0.5s ease;
 }
 
