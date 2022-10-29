@@ -1,0 +1,645 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-family: sans-serif;
+}
+::placeholder { 
+    color: rgb(255, 255, 255);
+  }
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    padding: 25px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    padding: 25px;
+    background-color: black;
+    color: beige;
+    font-size: 25px;
+}
+.dark-mode {
+    background-color: white;
+    color: black;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    font-family: "Montserrat", sans-serif;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(12, 253, 64, 0.303);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:#fff;
+    display: block;
+    transition: 0.3s;
+    position: relative;
+    /*changed*/
+}
+
+
+/*sidebar hover effect starts*/
+
+.sidebar a:hover {
+    color: #0000ff;
+    transition: transform 0.5s ease;
+}
+
+.sidebar a:hover::after {
+    transform: scale(1, 1);
+}
+
+
+/*sidebar hover ends*/
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.main .openbtn {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    /* color: #fff; */
+    padding: 5px 10px;
+    border: none;
+    float: left;
+}
+
+#main {
+    transition: margin-left 0.5s;
+}
+
+.main {
+    /* background-color: yellow; */
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.infoContainer {
+    /* background-color: rgb(242, 0, 255); */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    /* background-color: rgb(242, 0, 255); */
+    height: 45vh;
+    width: 75vw;
+    margin: 148px auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    /* background: #2f2f2f; */
+    color: #fff;
+    font-size: 22px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn {
+    width: 190px;
+    height: 50px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(17, 0, 255);
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 3px;
+    cursor: pointer;
+    border-color: #0000ff;
+}
+.btn-sm {
+    /* font-size: 14px;
+    padding: 10px 19px;
+    background-color: beige;
+    margin: 12px 0; */
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(166, 243, 255);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: #2200ff;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #c2e4ff;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* ==================Contact Page CSS====================== */
+
+.contactform {
+    /* padding: 0 34px; */
+    /* padding-top: 144px; */
+    font-family: "Nunito";
+/*  margin: 3% 0; */
+}
+
+.contactform h1 {
+    font-family: "Montserrat";
+    padding: 12px 0;
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    width: 1rem;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 1px;
+}
+
+#emailHelp {
+    font-size: 12px;
+    color: #193059;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+#clintMessage {
+    width: 26vw;
+    height: 6vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+form{
+    padding:10px;
+}
+.form-label {
+    margin-top: 15px;
+    /* margin-right: 15px; */
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .contactform {
+        padding: 2px 37px;
+        padding-top: 32px;
+        font-family: "Poppins", sans-serif;
+    }
+    .contactform form div input {
+        width: 80%;
+        border-radius: 15px;
+        margin: 13px 0 0 35px;
+        padding: 11px;
+        color: white;
+        background-color: transparent;
+        border:2px solid rgb(255, 255, 255);
+        outline: none;
+    }
+    #clintMessage {
+        width: 80%;
+        height: 15vh;
+        border-radius: 15px;
+        margin: 13px 0 0 13px;
+        padding: 5px;
+        outline: none;
+        color: white;
+        background-color: transparent;
+        border:2px solid rgb(255, 255, 255);
+        
+    }
+    .contactform form div input:hover,#clintMessage:hover{
+        box-shadow: 0 7px 7px -5px;
+    }
+    .contact-btn{
+        width:30%;
+        color:rgb(255, 255, 255);
+        border:2px solid rgb(255, 255, 255);
+        border-radius: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: transparent;
+    }
+    .contact-btn:hover{
+        box-shadow: 0 7px 7px -5px;
+        color: #ff4e00;
+    }
+    
+    .btn-sm {
+        /* font-size: 18px;
+        padding: 11px 22px;
+        margin: 12px 0; */
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .contactform {
+        padding: 0px 50px;
+        padding-top: 35px;
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+
+.infoContainer {
+    /* background-color: rgb(242, 0, 255); */
+    height: 59vh;
+    width: 84vw;
+    margin: 139px auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 15px;
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .contactform form div {
+        padding: 14px 28px;
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+        text-align: left;
+    }
+    .contactform form div input {
+        width:80%;
+        border-radius: 15px;
+        margin: 13px 0 0 35px;
+        padding: 13px;
+        color: white;
+        border:2px solid rgb(255, 255, 255);
+        outline:none;
+        background-color:transparent;
+    }
+    #clintMessage {
+        width: 80%;
+        height: 20vh;
+        border-radius: 15px;
+        margin: 13px 0 0 13px;
+        padding: 13px;
+        outline: none;
+        color: white;
+        background-color: transparent;
+        border:2px solid rgb(255, 255, 255);
+    }
+    .contactform form div input:hover,#clintMessage:hover{
+        box-shadow: 0 7px 7px -5px;
+    }
+    .contact-btn{
+        width:30%;
+        color:rgb(255, 255, 255);
+        border:2px solid rgb(255, 255, 255);
+        border-radius: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: transparent;
+    }
+    .contact-btn:hover{
+        box-shadow: 0 7px 7px -5px;
+    }
+    
+    
+    
+    .btn-sm {
+        /* font-size: 20px;
+        padding: 8px 25px;
+        margin: 15px 29px; */
+    }
+    .contactform {
+        padding: 2px 65px;
+        padding-top: 22px;
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (max-width: 828px) {
+    
+    .contact-btn{
+        width:50%;
+        color:rgb(255, 255, 255);
+        border:2px solid rgb(255, 255, 255);
+        border-radius: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: transparent;
+        font-size: 12px;
+    }
+    .contact-btn:hover{
+        box-shadow: 0 7px 7px -5px;
+    }
+    
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 225, 255);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00eeff;
+}
+
+.section-title {
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 30px;
+    position: relative;
+    display: inline;
+    padding: 0px;
+}
+
+.section-title::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #82ccdd;
+    margin: 10px 0px;
+}
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+} */
+
+#mySidebar.show {
+    width: 250px;
+}
+
+#main.show {
+    margin-left: 250px;
+}
+
+#hamburger {
+    font-size: 1.8rem;
+}
+
+#navbtn .fas.fa-bars {
+    font-size: 1.8rem;
+    color: #000;
+}
+
+#navbtn {
+    width: 2.5rem;
+    height: 2rem;
+    background-color: linear-gradient( to right, rgb(236, 72, 153), rgb(239, 68, 68), rgb(234, 179, 8));
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+    .service-box {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-box {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-box {
+        max-width: 100%;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.creative {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    box-shadow: 0 0 12px -2px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: -40px;
+    opacity: 0;
+}
+
+.check-box svg {
+    width: 40px;
+    margin: 20px;
+}
+
+svg path {
+    stroke-width: 3;
+    stroke: #fff;
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    stroke-linecap: round;
+}
+
+.active {
+    background: #ff2b75;
+    transition: 1s;
+}
+
+.active .check-box {
+    right: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.active p {
+    margin-right: 125px;
+    transition: 1s;
+}
+
+.active svg path {
+    stroke-dashoffset: 0;
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+
+textarea {
+    resize: none;
+    max-width: 640px;
+}
+
+.typeCard {
+    background-color: rgb(248 254 255 / 10%);
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    width: 50%;
+    border-radius: 19px;
+    margin-bottom: 2.5%;
+}
+
+input[type="submit"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.Thankyou {
+    font-weight: 600;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.big-circle {
+    position: absolute;
+    width: 449px;
+    height: 449px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #ec9405, #ff4e00);
+    bottom: 52%;
+    right: 30%;
+    z-index: -1;
+    transform: translate(-40%, 38%);
+}
