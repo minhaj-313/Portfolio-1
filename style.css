@@ -270,17 +270,24 @@ footer {
     border: 2px solid blue;
     border-radius: 50%;
     margin-top: -25px;
+    transition: transform 0.3s ease;
 }
 
 .devPic img:hover {
     box-shadow: 0 3px 5px blue;
     border: 2px solid blue;
     align-items: center;
+    transform: scale(1.05);
+    transition-duration: 600ms;
 }
 
 .devPic-2 img {
     height: 25vh;
     align-items: center;
+}
+
+.devPic-2 img:hover {
+    transform: scale(1.2); /* Scale the image to 1.2 times its size on hover */
 }
 
 .skillcontainetr {
