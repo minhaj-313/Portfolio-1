@@ -20,69 +20,73 @@
                 <div id="mySidebar" class="sidebar">
                     <ul>
                         <li><a href="index.html">Home</li></a>
-                            <li><a href="intro.html">My Intro</li></a>
-                                <li><a href="services.html">Services</li></a>
-                                    <li><a href="images/Shaikh Minhaj Resume.pdf" target="_blank">Resume</a></li>
-                                    </a>
-                                    <li><a href="blog.html">Blog</li></a>
-                                        <li><a href="contact.html">Contact Me</li></a>
-                                            <li><a href="linktree.html">Links</li></a>
+                        <li><a href="intro.html">My Intro</li></a>
+                        <li><a href="services.html">Services</li></a>
+                        <li><a href="images/Shaikh Minhaj Resume.pdf" target="_blank">Resume</a></li>
+                        </a>
+                        <li><a href="blog.html">Blog</li></a>
+                        <li><a class="active" href="contact.html">Contact Me</li></a>
+                        <li><a href="linktree.html">Links</li></a>
                     </ul>
             </nav>
-            </div>
-            <!--================Main========================-->
-            <div class="main" id="main">
-                <button class="openbtn" onclick="toggleNav()"><i class="fas fa-bars" id="hamburger"></i></button>
-                <span class="big-circle"></span>
-                <div class="center">
-                    <div class="typeCard">
-                        <div class="contactform">
-                            <div class="upperPart">
-                                <h1>Contact Me </h1>
-                            </div>
-                            <!--Form-->
-                            <form action="Thankyou.html">
-                                <div class="mb-3">
-                                    <label for="clintName" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="clintName"  placeholder="For ex : Shaikh Minhaj" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="clintEmail" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="clintEmail" aria-describedby="emailHelp" placeholder="For ex : xyz@abc.com" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="clintPhone" class="form-label">Phone</label>
-                                    <input type="phone" class="form-control"  id="clintPhone" placeholder="For ex :9999999999" pattern="[6789][0-9]{9}">
-
-                                </div>
-                                <div class="mb-3">
-                                    <label for="clintMessage" class="form-label">Message</label>
-                                    <textarea type="text-area" class="form-control" id="clintMessage" placeholder="Start Typing your query......"></textarea>
-                                </div>
-                                <button class="contact-btn" type="submit" value="Send">Submit</button>
-
-
-                            </form>
-
-
-                            <script type="text/javascript">
-                            </script>
-                            <br>
+        </div>
+        <!--================Main========================-->
+        <div class="main" id="main">
+            <button class="openbtn" onclick="toggleNav()"><i class="fas fa-bars" id="hamburger"></i></button>
+            <span class="big-circle"></span>
+            <div class="center">
+                <div class="typeCard">
+                    <div class="contactform">
+                        <div class="upperPart">
+                            <h1>Contact Me </h1>
                         </div>
+                        <!--Form-->
+                        <form action="Thankyou.html">
+                            <div class="mb-3">
+                                <label for="clintName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="clintName"
+                                    placeholder="For ex : Shaikh Minhaj" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="clintEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="clintEmail" aria-describedby="emailHelp"
+                                    placeholder="For ex : xyz@abc.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="clintPhone" class="form-label">Phone</label>
+                                <input type="phone" class="form-control" id="clintPhone"
+                                    placeholder="For ex :9999999999" pattern="[6789][0-9]{9}">
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="clintMessage" class="form-label">Message</label>
+                                <textarea type="text-area" class="form-control" id="clintMessage"
+                                    placeholder="Start Typing your query......"></textarea>
+                            </div>
+                            <button class="contact-btn" type="submit" value="Send">Submit</button>
+
+
+                        </form>
+
+
+                        <script type="text/javascript">
+                        </script>
+                        <br>
                     </div>
                 </div>
-
             </div>
 
-            <div>
-
-
-                <img src="images/btn-LB.png" alt="o" height="30px" onclick="myFunction()">
-
-            </div>
         </div>
 
-        <script src="script.js"></script>
+        <div>
+
+
+            <img src="images/btn-LB.png" alt="o" height="30px" onclick="myFunction()">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
