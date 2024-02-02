@@ -25,21 +25,27 @@
 
     <div class="container">
 
-        <div class="sidebar">
             <!--================Navbar====================-->
-            <nav>
-                <div id="mySidebar" class="sidebar">
-                    <ul>
-                        <li><a href="index.html">Home</li></a>
-                        <li><a href="intro.html">Dashboard</li></a>
-                        <li><a href="services.html">Services</li></a>
-                        <li><a href="images/Shaikh Minhaj Resume.pdf" target="_blank">Resume</a></li></a>
-                        <li><a href="blog.html">Blog</li></a>
-                        <li><a href="contact.html">Contact Me</li></a>
-                        <li><a href="linktree.html">Links</li></a>
-                    </ul>
-            </nav>
-        </div>
+        <nav>
+            <div id="nav-bar">
+                <input id="nav-toggle" type="checkbox"/>
+                <div id="nav-header">
+                  <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+                  <hr/>
+                </div>
+                <div id="nav-content">
+                  <div class="nav-button"><i class="fas fa-home"></i><a href="index.html">Home</a></div>
+                  <div class="nav-button"><i class="fas fa-dashboard"></i><a href="intro.html">Dashboard</a></div>
+                  <div class="nav-button"><i class="fas fa-laptop"></i><a href="services.html">Services</a></div>
+                  <div class="nav-button"><i class="fas fa-file"></i><a href="images/Shaikh Minhaj Resume.pdf" target="_blank">Resume</a></div>
+                  <div class="nav-button"><i class="fas fa-blog"></i><a href="blog.html">Blog</a></div>
+                  <div class="nav-button"><i class="fas fa-address-book"></i><a href="contact.html">Contact Me</a></div>
+                  <div class="nav-button"><i class="fas fa-link"></i><a href="linktree.html">Links</a></div>
+                  <div id="nav-content-highlight"></div>
+                </div>
+            </div>
+        </nav>
+        
         <!--================Main========================-->
         <div class="main" id="main">
             <button class="openbtn" onclick="toggleNav()">
