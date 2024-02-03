@@ -283,17 +283,21 @@ footer {
 }
 
 .devPic-2 img {
-  height: 25vh;
-  margin: 20px 45%;
+  margin: 20px 50%;
   border: 5px solid rgb(239, 239, 231);
-  width: 160px;
   border-radius: 50px;
-  ;
+  width: 250px;
+  height: 250px;
+  transform: translate(-50%);
 
 }
 
-.skillcontainetr {
+.skillcontainer {
   padding-left: 15px;
+  font-family: 'Fira Sans', sans-serif;
+  max-width: 50%;
+  margin-left: 25%;
+
 }
 
 .switch {
